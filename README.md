@@ -40,6 +40,7 @@ This project uses information and data from open-source projects. Full license t
 - **mh4edit** by Rokumaehn (MIT): save format, equipment icons, name lists. https://github.com/Rokumaehn/mh4edit
 - **MH4U Database** by Gathering Hall Studios / DavianCorp (MIT): skill data and item stack limits. https://github.com/gatheringhallstudios/MonsterHunter4UDatabase
 - **4u-native** by khorne-hub: MH4U for Android, where saves are used. https://github.com/khorne-hub/4u-native
+- Palico equipment sets use equipment data (gear IDs and gear slots) from complete saves found online. The original source is unknown.
 
 Monster Hunter and all related names, images and icons belong to Capcom. This is an unofficial fan project and is not affiliated with or endorsed by Capcom.
 
@@ -89,6 +90,7 @@ Proyek ini memakai informasi dan data dari proyek open source. Teks lisensi leng
 - **mh4edit** oleh Rokumaehn (MIT): format save, ikon equipment, daftar nama.
 - **MH4U Database** oleh Gathering Hall Studios / DavianCorp (MIT): data skill dan batas stack item.
 - **4u-native** oleh khorne-hub: MH4U untuk Android, tempat save dipakai.
+- Set equipment Palico memakai data equipment (ID gear dan slot gear) dari save tamat yang ditemukan di internet. Sumber aslinya belum diketahui.
 
 Monster Hunter beserta semua nama, gambar, dan ikon terkait adalah milik Capcom. Ini proyek penggemar tidak resmi dan tidak berafiliasi dengan Capcom.
 
