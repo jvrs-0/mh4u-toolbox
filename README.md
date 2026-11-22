@@ -6,7 +6,7 @@
 
 An unofficial, offline save editor for **Monster Hunter 4 Ultimate**, built as a single HTML page. It runs entirely in your browser: your save file is never uploaded anywhere.
 
-> **v0.1 Beta.** Not every feature has been fully tested. **Always back up your save before overwriting it.**
+> **v1.1.1 Beta.** Not every feature has been fully tested. **Always back up your save before overwriting it.**
 
 ## Features
 
@@ -50,11 +50,11 @@ MIT, see [LICENSE](LICENSE). Third-party components keep their own licenses, see
 
 ---
 
-# 🇮🇩 Bahasa Indonesia
+# 🇮🇩 Indonesia
 
 Save editor **tidak resmi** untuk **Monster Hunter 4 Ultimate** berupa satu halaman HTML. Semuanya berjalan di browser kamu: file save tidak diunggah ke mana pun.
 
-> **v0.1 Beta.** Belum semua fitur teruji penuh. **Selalu backup save sebelum menimpanya.**
+> **v1.1.1 Beta.** Belum semua fitur teruji penuh. **Selalu backup save sebelum menimpanya.**
 
 ## Fitur
 
