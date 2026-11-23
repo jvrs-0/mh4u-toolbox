@@ -1,0 +1,1 @@
+document.querySelectorAll(".fold>b:first-child").forEach(b=>{const t=()=>{b.setAttribute("aria-expanded",b.parentNode.classList.toggle("open"))};b.setAttribute("role","button");b.tabIndex=0;b.setAttribute("aria-expanded",b.parentNode.classList.contains("open"));b.onclick=t;b.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();t()}}});

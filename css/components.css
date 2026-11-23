@@ -1,0 +1,21 @@
+.dbadd{padding:10px 14px;border-bottom:2px solid var(--gold);background:rgba(201,162,39,.12)}
+.dbadd>b{display:block;font-family:Georgia,"Times New Roman",serif;font-size:15px;color:var(--ac);margin-bottom:6px}
+.dbadr{display:flex;flex-wrap:wrap;align-items:flex-end;gap:8px 12px}
+.dbadr label{display:flex;flex-direction:column;gap:2px;margin:0;font-size:12px;color:var(--mut)}
+.dbadr label.ck{flex-direction:row;align-items:center;gap:6px;font-size:14px;color:var(--fg);padding-bottom:10px}
+.dbadr input[type=number]{width:84px;padding:8px}
+.dbadr input[type=checkbox]{width:18px;height:18px}
+.dbadr select{width:auto;min-width:84px;padding:8px}
+.dbadr .aid1{font-size:14px;color:var(--fg);padding-bottom:10px}
+.dbadr button{margin:0;flex:1 1 auto;min-width:140px}
+.dbmsg{font-size:13px;margin-top:6px;color:var(--mut)}
+.dbmsg:empty{display:none}
+.dbmsg.ok{color:var(--ok)}
+.dbmsg.er{color:var(--er)}
+#eltabs button[aria-pressed=true]{background:var(--ac);color:var(--onac)}#eltabs button{flex:1;margin:2px}.ii{display:inline-block;width:30px;height:30px;background-position:center;background-size:contain;background-repeat:no-repeat;vertical-align:middle;margin-right:6px;flex:none}#sug button .ii,#pgsug button .ii,#eqsug button .ii{width:24px;height:24px}:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.wr{font-size:14px}.hd .sub{font-size:12px}
+.tb{gap:6px}.tb button{font-size:16px;padding:12px 6px;gap:6px}.tb button svg{width:20px;height:20px}
+@media (max-width:380px){.tb button{font-size:14px}.tb button svg{display:none}}
+.nl{display:inline-block;margin-left:4px;font-size:13px;font-weight:700;color:var(--ac);cursor:pointer;text-decoration:underline}
+.cl{list-style:none;margin:6px 0 0;padding:0}.cl li{padding:8px 0;border-bottom:1px solid var(--bd);font-size:14px}.cl li:last-child{border:0}.cl b{display:inline-block;min-width:48px;margin-right:8px;color:var(--ac)}
+#pgNt .c>b:first-child{display:block;margin-bottom:6px}

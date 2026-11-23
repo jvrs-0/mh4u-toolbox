@@ -1,0 +1,10 @@
+{
+  "name": "mh4u-toolbox",
+  "version": "0.5.0",
+  "private": true,
+  "description": "MH4U Toolbox - editor save dan database MH4U (static site untuk GitHub Pages)",
+  "scripts": {
+    "build:db": "python3 tools/build-database.py",
+    "test": "node tests/search.test.js && node tests/app-views.test.js"
+  }
+}

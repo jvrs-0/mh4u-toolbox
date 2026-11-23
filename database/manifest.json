@@ -1,0 +1,415 @@
+{
+ "schema": 1,
+ "source": "tools/source/dbz.gz",
+ "sourceSha1": "e7485cce12957f01c1abd4f155a25846829c13ad",
+ "tables": {
+  "armor": {
+   "file": "tables/armor.json",
+   "rows": 3087,
+   "columns": [
+    "_id",
+    "slot",
+    "defense",
+    "max_defense",
+    "fire_res",
+    "thunder_res",
+    "dragon_res",
+    "water_res",
+    "ice_res",
+    "gender",
+    "hunter_type",
+    "num_slots"
+   ],
+   "pk": "_id",
+   "group": "equipment",
+   "bytes": 154922,
+   "description": "Statistik armor; _id sama dengan items._id"
+  },
+  "combining": {
+   "file": "tables/combining.json",
+   "rows": 168,
+   "columns": [
+    "created_item_id",
+    "item_1_id",
+    "item_2_id",
+    "amount_made_min",
+    "amount_made_max",
+    "percentage"
+   ],
+   "pk": null,
+   "group": "crafting",
+   "bytes": 3535,
+   "description": "Resep combining item"
+  },
+  "components": {
+   "file": "tables/components.json",
+   "rows": 23102,
+   "columns": [
+    "created_item_id",
+    "component_item_id",
+    "quantity",
+    "type"
+   ],
+   "pk": null,
+   "group": "crafting",
+   "bytes": 523888,
+   "description": "Bahan untuk Create/Improve senjata dan armor"
+  },
+  "decorations": {
+   "file": "tables/decorations.json",
+   "rows": 289,
+   "columns": [
+    "_id",
+    "num_slots"
+   ],
+   "pk": "_id",
+   "group": "equipment",
+   "bytes": 2641,
+   "description": "Jumlah slot decoration; _id sama dengan items._id"
+  },
+  "gathering": {
+   "file": "tables/gathering.json",
+   "rows": 7419,
+   "columns": [
+    "item_id",
+    "location_id",
+    "area",
+    "site",
+    "rank",
+    "quantity",
+    "percentage"
+   ],
+   "pk": null,
+   "group": "world",
+   "bytes": 253562,
+   "description": "Titik gathering per lokasi/area"
+  },
+  "horn_melodies": {
+   "file": "tables/horn_melodies.json",
+   "rows": 143,
+   "columns": [
+    "notes",
+    "song",
+    "effect1",
+    "effect2",
+    "duration",
+    "extension"
+   ],
+   "pk": null,
+   "group": "equipment",
+   "bytes": 10704,
+   "description": "Melodi Hunting Horn"
+  },
+  "hunting_rewards": {
+   "file": "tables/hunting_rewards.json",
+   "rows": 4336,
+   "columns": [
+    "item_id",
+    "condition",
+    "monster_id",
+    "rank",
+    "stack_size",
+    "percentage"
+   ],
+   "pk": null,
+   "group": "monster",
+   "bytes": 137808,
+   "description": "Drop dari monster (carve, break, capture, dll.)"
+  },
+  "item_to_skill_tree": {
+   "file": "tables/item_to_skill_tree.json",
+   "rows": 11947,
+   "columns": [
+    "item_id",
+    "skill_tree_id",
+    "point_value"
+   ],
+   "pk": null,
+   "group": "skills",
+   "bytes": 149198,
+   "description": "Poin skill dari item/armor/decoration"
+  },
+  "items": {
+   "file": "tables/items.json",
+   "rows": 7324,
+   "columns": [
+    "_id",
+    "name",
+    "type",
+    "sub_type",
+    "rarity",
+    "carry_capacity",
+    "buy",
+    "sell",
+    "description"
+   ],
+   "pk": "_id",
+   "group": "core",
+   "bytes": 442801,
+   "description": "Semua item, termasuk senjata/armor/decoration (nama, tipe, rarity, harga)"
+  },
+  "locations": {
+   "file": "tables/locations.json",
+   "rows": 20,
+   "columns": [
+    "_id",
+    "name"
+   ],
+   "pk": "_id",
+   "group": "core",
+   "bytes": 415,
+   "description": "Daftar lokasi/peta"
+  },
+  "monster_ailment": {
+   "file": "tables/monster_ailment.json",
+   "rows": 261,
+   "columns": [
+    "monster_id",
+    "ailment"
+   ],
+   "pk": null,
+   "group": "monster",
+   "bytes": 5202,
+   "description": "Ailment yang bisa ditimbulkan monster"
+  },
+  "monster_damage": {
+   "file": "tables/monster_damage.json",
+   "rows": 986,
+   "columns": [
+    "monster_id",
+    "body_part",
+    "cut",
+    "impact",
+    "shot",
+    "fire",
+    "water",
+    "ice",
+    "thunder",
+    "dragon",
+    "ko"
+   ],
+   "pk": null,
+   "group": "monster",
+   "bytes": 43374,
+   "description": "Damage multiplier per bagian tubuh"
+  },
+  "monster_habitat": {
+   "file": "tables/monster_habitat.json",
+   "rows": 147,
+   "columns": [
+    "monster_id",
+    "location_id",
+    "start_area",
+    "move_area",
+    "rest_area"
+   ],
+   "pk": null,
+   "group": "monster",
+   "bytes": 3023,
+   "description": "Habitat monster per lokasi dan area"
+  },
+  "monster_status": {
+   "file": "tables/monster_status.json",
+   "rows": 784,
+   "columns": [
+    "monster_id",
+    "status",
+    "initial",
+    "increase",
+    "max",
+    "duration",
+    "damage"
+   ],
+   "pk": null,
+   "group": "monster",
+   "bytes": 21681,
+   "description": "Resistensi status abnormal monster"
+  },
+  "monster_to_quest": {
+   "file": "tables/monster_to_quest.json",
+   "rows": 912,
+   "columns": [
+    "monster_id",
+    "quest_id",
+    "unstable"
+   ],
+   "pk": null,
+   "group": "quest",
+   "bytes": 13005,
+   "description": "Relasi monster dengan quest"
+  },
+  "monster_weakness": {
+   "file": "tables/monster_weakness.json",
+   "rows": 112,
+   "columns": [
+    "monster_id",
+    "state",
+    "fire",
+    "water",
+    "thunder",
+    "ice",
+    "dragon",
+    "poison",
+    "paralysis",
+    "sleep",
+    "pitfall_trap",
+    "shock_trap",
+    "flash_bomb",
+    "sonic_bomb",
+    "dung_bomb",
+    "meat"
+   ],
+   "pk": null,
+   "group": "monster",
+   "bytes": 4894,
+   "description": "Kelemahan elemen/status/trap per state"
+  },
+  "monsters": {
+   "file": "tables/monsters.json",
+   "rows": 106,
+   "columns": [
+    "_id",
+    "class",
+    "name",
+    "signature_move",
+    "trait",
+    "sort_name"
+   ],
+   "pk": "_id",
+   "group": "monster",
+   "bytes": 6777,
+   "description": "Daftar monster"
+  },
+  "quest_prereqs": {
+   "file": "tables/quest_prereqs.json",
+   "rows": 319,
+   "columns": [
+    "quest_id",
+    "prereq_id"
+   ],
+   "pk": null,
+   "group": "quest",
+   "bytes": 3012,
+   "description": "Prasyarat quest"
+  },
+  "quest_rewards": {
+   "file": "tables/quest_rewards.json",
+   "rows": 10300,
+   "columns": [
+    "quest_id",
+    "item_id",
+    "reward_slot",
+    "percentage",
+    "stack_size"
+   ],
+   "pk": null,
+   "group": "quest",
+   "bytes": 197151,
+   "description": "Hadiah quest per slot"
+  },
+  "quests": {
+   "file": "tables/quests.json",
+   "rows": 569,
+   "columns": [
+    "_id",
+    "name",
+    "goal",
+    "hub",
+    "type",
+    "stars",
+    "location_id",
+    "time_limit",
+    "fee",
+    "reward",
+    "hrp",
+    "sub_goal",
+    "sub_reward",
+    "sub_hrp"
+   ],
+   "pk": "_id",
+   "group": "quest",
+   "bytes": 66337,
+   "description": "Daftar quest (hub, bintang, lokasi, hadiah)"
+  },
+  "skill_trees": {
+   "file": "tables/skill_trees.json",
+   "rows": 144,
+   "columns": [
+    "_id",
+    "name"
+   ],
+   "pk": "_id",
+   "group": "skills",
+   "bytes": 2419,
+   "description": "Daftar skill tree (nama)"
+  },
+  "skills": {
+   "file": "tables/skills.json",
+   "rows": 277,
+   "columns": [
+    "_id",
+    "skill_tree_id",
+    "required_skill_tree_points",
+    "name",
+    "description"
+   ],
+   "pk": "_id",
+   "group": "skills",
+   "bytes": 24642,
+   "description": "Level skill per skill tree beserta deskripsi"
+  },
+  "weapons": {
+   "file": "tables/weapons.json",
+   "rows": 2324,
+   "columns": [
+    "_id",
+    "parent_id",
+    "wtype",
+    "creation_cost",
+    "upgrade_cost",
+    "attack",
+    "max_attack",
+    "element",
+    "element_attack",
+    "element_2",
+    "element_2_attack",
+    "awaken",
+    "awaken_attack",
+    "defense",
+    "sharpness",
+    "affinity",
+    "horn_notes",
+    "shelling_type",
+    "phial",
+    "charges",
+    "coatings",
+    "recoil",
+    "reload_speed",
+    "rapid_fire",
+    "deviation",
+    "ammo",
+    "special_ammo",
+    "num_slots",
+    "tree_depth",
+    "final"
+   ],
+   "pk": "_id",
+   "group": "equipment",
+   "bytes": 424681,
+   "description": "Statistik senjata; _id sama dengan items._id"
+  },
+  "wyporium": {
+   "file": "tables/wyporium.json",
+   "rows": 128,
+   "columns": [
+    "item_in_id",
+    "item_out_id",
+    "unlock_quest_id"
+   ],
+   "pk": null,
+   "group": "crafting",
+   "bytes": 1978,
+   "description": "Tukar item Wyporium"
+  }
+ }
+}
