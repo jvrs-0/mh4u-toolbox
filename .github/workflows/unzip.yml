@@ -1,0 +1,26 @@
+name: Extract zip
+on:
+  push:
+    paths: ['*.zip']
+permissions:
+  contents: write
+jobs:
+  unzip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract
+        run: |
+          set -e
+          z=$(ls *.zip | head -n1)
+          unzip -q "$z" -d _x
+          rm "$z"
+          cp -a _x/*/. .
+          rm -rf _x
+      - name: Commit
+        run: |
+          git config user.name github-actions
+          git config user.email actions@github.com
+          git add -A
+          git commit -m "Extract site from zip"
+          git push
